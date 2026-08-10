@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primary-bg: #07051a;
+    /*Azul Marinho escuro, para o fundo principal*/
+    --secondary-bg: #151236;
+    /*Tom de roxo, para contraste entre seções*/
+    --main-text: #e2e8f0;
+    /*Branco acinzentado, para uma leitura mais confortável*/
+    --btn: #00e5ff;
+    /*Ciano, para botões, links ou textos*/
+    --gradiente: #b026ff;
+    /*Magenta, para contrastar o ciano*/
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--main-text);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text);
+}
+
+a:hover {
+    color: var(--btn);
+}
+
+.logo{
+    font-size: 28px;
+}
