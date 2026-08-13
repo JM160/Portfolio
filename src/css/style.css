@@ -47,6 +47,68 @@ a:hover {
     color: var(--btn);
 }
 
-.logo{
+.logo {
     font-size: 28px;
+}
+
+#Sobre {
+    padding: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 0 80px;
+
+    line-height:1.6;
+
+    .txt {
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h1 span {
+        color: var(--gradiente);
+    }
+
+    .btn {
+        background-color: var(--btn);
+        color: var(--primary-bg);
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: var(--gradiente);
+        color: var(--main-text);
+    }
+
+    img {
+        max-width: 400px;
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: #b026ff 0px 0px 20px;
+    }
+}
+
+@keyframes flutuar{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.foto {
+    animation: flutuar 4s ease-in-out infinite;
 }
