@@ -220,12 +220,24 @@ h1 span {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn:hover,
+.btn:hover {
+    transform: translateY(-3px);
+}
+
 .btn-projeto:hover,
-.contact-item:hover,
-.tech-item:hover,
 .card-projeto:hover {
     transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(125, 211, 252, 0.14);
+}
+
+.tech-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(125, 211, 252, 0.12);
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(125, 211, 252, 0.1);
 }
 
 .btn-primary {
@@ -337,7 +349,10 @@ h1 span {
 .card-imagem {
     width: 100%;
     height: 220px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    padding: 12px 12px 0;
+    background: rgba(125, 211, 252, 0.04);
     border-bottom: 1px solid rgba(148, 163, 184, 0.12);
 }
 
@@ -536,7 +551,7 @@ h1 span {
     padding: 22px 18px;
     border-radius: 22px;
     color: var(--text);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-item i {
